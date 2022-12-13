@@ -5,8 +5,8 @@ import Home from "./Pages/Home/Home";
 
 const routes = [
   { path: "/", element: <Home /> },
-  { path: "/articles/:articleId", element: <MainArticle /> },
-  { path: "/categories/:categoryId", element: <MainCategory /> },
-  { path: "/courses/:courseId", element: <MainCourse /> },
+  { path: "/articles-info/:articleId", element: <MainArticle /> },
+  { path: "/categories-info/:categoryId", element: <MainCategory /> },
+  { path: "/courses-info/:courseId", element: <MainCourse /> },
 ];
 export default routes;

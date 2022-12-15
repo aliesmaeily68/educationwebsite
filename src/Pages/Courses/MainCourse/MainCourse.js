@@ -1,9 +1,12 @@
 import React from "react";
 import Breadcrumb from "../../../Components/Breadcrumb/Breadcrumb";
+import CommentAreaBox from "../../../Components/CommentAreaBox/CommentAreaBox";
 import CourseDatailsBox from "../../../Components/CourseDatailsBox/CourseDatailsBox";
 import Footer from "../../../Components/Footer/Footer";
 import Navbar from "../../../Components/Header/Navbar/Navbar";
 import Topbar from "../../../Components/Header/Topbar/Topbar";
+import Accordion from "react-bootstrap/Accordion";
+
 import "./MainCourse.css";
 
 function MainCourse() {
@@ -217,7 +220,99 @@ function MainCourse() {
                   </div>
 
                   <div class="introduction__topic">
-                    <div class="accordion" id="accordionExample">
+                    <Accordion defaultActiveKey="0" flush>
+                      <Accordion.Item
+                        eventKey="0"
+                        className="accordion"
+                        id="accordionExample"
+                      >
+                        <Accordion.Header> معرفی دوره</Accordion.Header>
+                        <Accordion.Body>
+                          <div class="accordion-body introduction__accordion-body">
+                            <div class="introduction__accordion-right">
+                              <span class="introduction__accordion-count">
+                                1
+                              </span>
+                              <i class="fab fa-youtube introduction__accordion-icon"></i>
+                              <a href="#" class="introduction__accordion-link">
+                                معرفی دوره + چرا یادگیری کتابخانه ها ضروری است؟
+                              </a>
+                            </div>
+                            <div class="introduction__accordion-left">
+                              <span class="introduction__accordion-time">
+                                18:34
+                              </span>
+                            </div>
+                          </div>
+                        </Accordion.Body>
+                      </Accordion.Item>
+
+                      <Accordion.Item
+                        eventKey="1"
+                        className="accordion"
+                        id="accordionExample"
+                      >
+                        <Accordion.Header>
+                          مقدمه ای بر آموزش ری اکت
+                        </Accordion.Header>
+                        <Accordion.Body>
+                          <div class="accordion-body introduction__accordion-body">
+                            <div class="introduction__accordion-right">
+                              <span class="introduction__accordion-count">
+                                1
+                              </span>
+                              <i class="fab fa-youtube introduction__accordion-icon"></i>
+                              <a href="#" class="introduction__accordion-link">
+                                معرفی دوره + چرا یادگیری کتابخانه ها ضروری است؟
+                              </a>
+                            </div>
+                            <div class="introduction__accordion-left">
+                              <span class="introduction__accordion-time">
+                                18:34
+                              </span>
+                            </div>
+                          </div>
+
+
+                          <div class="accordion-body introduction__accordion-body">
+                            <div class="introduction__accordion-right">
+                              <span class="introduction__accordion-count">
+                               2
+                              </span>
+                              <i class="fab fa-youtube introduction__accordion-icon"></i>
+                              <a href="#" class="introduction__accordion-link">
+                               درس2
+                              </a>
+                            </div>
+                            <div class="introduction__accordion-left">
+                              <span class="introduction__accordion-time">
+                                12:34
+                              </span>
+                            </div>
+                          </div>
+
+
+                          <div class="accordion-body introduction__accordion-body">
+                            <div class="introduction__accordion-right">
+                              <span class="introduction__accordion-count">
+                               3
+                              </span>
+                              <i class="fab fa-youtube introduction__accordion-icon"></i>
+                              <a href="#" class="introduction__accordion-link">
+                                درس 3
+                              </a>
+                            </div>
+                            <div class="introduction__accordion-left">
+                              <span class="introduction__accordion-time">
+                                15:34
+                              </span>
+                            </div>
+                          </div>
+
+                        </Accordion.Body>
+                      </Accordion.Item>
+                    </Accordion>
+                    {/* <div class="accordion" id="accordionExample">
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                           <button
@@ -333,7 +428,7 @@ function MainCourse() {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
@@ -369,6 +464,8 @@ function MainCourse() {
                     زمینه وب فعالیت داشته باشم.و..
                   </p>
                 </div>
+
+                <CommentAreaBox />
 
                 {/* Finish Teacher Details  */}
               </div>
